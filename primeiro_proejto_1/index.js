@@ -13,7 +13,7 @@ const aluno = {
     RA : "123456",
     email: "steinickbruno@gmail.com"
 
-}
+};
 
 aluno.telefone = "46 999202847"
 
@@ -27,11 +27,7 @@ console.log("aluno:", aluno);
 
 for(var i = 0; i < pessoas.length ; i++){
     console.log(pessoas[i]);
-}
-
-pessoas.forEach(i=>{
-    console.log(i)
-});
+};
 
 
 
