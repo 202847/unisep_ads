@@ -17,7 +17,7 @@ export default function HomeEscolar() {
 
                 <TouchableOpacity 
                     style={styles.perfilBtn}
-                    onPress={() => navigation.navigate("Perfil")}
+                    onPress={() => navigation.navigate("perfil")}
                 >
                     <Ionicons name="person-circle-outline" size={35} color="#fff" />
                 </TouchableOpacity>

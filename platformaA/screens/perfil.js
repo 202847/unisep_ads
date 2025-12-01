@@ -1,9 +1,12 @@
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, Button } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
+import { useNavigation } from "@react-navigation/native";
 
 import perfil from "../assets/pires.jpg"
 
 export default function Perfil() {
+    const navigation = useNavigation();
+
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -25,6 +28,11 @@ export default function Perfil() {
                     </View>
                 </View>
             </View>
+
+            <Button
+                title="Ir para Escolar"
+                onPress={() => navigation.navigate("homeescolar")}
+            />
 
         </View>
     )
